@@ -1,0 +1,192 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7101,        184]
+NotebookOptionsPosition[      6253,        162]
+NotebookOutlinePosition[      6596,        177]
+CellTagsIndexPosition[      6553,        174]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"StringSplit", "[", 
+   RowBox[{
+   "\"\</home/conor/.bin:/usr/local/bin:/home/conor/bin:/home/conor/.local/\
+bin:/home/conor/bin:/home/conor/.local/bin:/usr/local/sbin:/usr/local/bin:/\
+usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin\>\"", ",", 
+    "\"\<:\>\""}], "]"}], "//", "TableForm"}]], "Input",
+ CellFrame->{{True, True}, {False, True}},
+ CellFrameLabels->{{None, None}, {None, "input (mathematica code)"}},
+ CellChangeTimes->{{3.765690460663842*^9, 3.765690461391439*^9}, {
+  3.7656906024434443`*^9, 3.765690603751608*^9}, {3.808705057329588*^9, 
+  3.808705092079968*^9}},
+ Background->GrayLevel[0.95],
+ CellLabel->"In[3]:=",ExpressionUUID->"52a735c1-c658-4250-b73a-6e4e2bc398e1"],
+
+Cell[BoxData[
+ TagBox[
+  TagBox[GridBox[{
+     {"\<\"/home/conor/.bin\"\>"},
+     {"\<\"/usr/local/bin\"\>"},
+     {"\<\"/home/conor/bin\"\>"},
+     {"\<\"/home/conor/.local/bin\"\>"},
+     {"\<\"/home/conor/bin\"\>"},
+     {"\<\"/home/conor/.local/bin\"\>"},
+     {"\<\"/usr/local/sbin\"\>"},
+     {"\<\"/usr/local/bin\"\>"},
+     {"\<\"/usr/sbin\"\>"},
+     {"\<\"/usr/bin\"\>"},
+     {"\<\"/sbin\"\>"},
+     {"\<\"/bin\"\>"},
+     {"\<\"/usr/games\"\>"},
+     {"\<\"/usr/local/games\"\>"},
+     {"\<\"/snap/bin\"\>"}
+    },
+    GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.5599999999999999]}, 
+        Offset[0.27999999999999997`]}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}}],
+   Column],
+  Function[BoxForm`e$, 
+   TableForm[BoxForm`e$]]]], "Output",
+ CellFrame->{{True, True}, {True, False}},
+ CellFrameLabels->{{None, None}, {"output", None}},
+ CellChangeTimes->{{3.765690460729289*^9, 3.765690463079056*^9}, {
+  3.765690604830686*^9, 3.7656906091543818`*^9}, {3.808705057355569*^9, 
+  3.808705092394113*^9}},
+ Background->GrayLevel[0.85],
+ CellLabel->
+  "Out[3]//TableForm=",ExpressionUUID->"11635f1e-df1c-431d-b425-79ba0c20af77"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"data", "=", 
+   RowBox[{"{", 
+    RowBox[{
+    "\"\</home/conor/bin\>\"", ",", "\"\</home/conor/.local/bin\>\"", ",", 
+     "\"\</home/conor/bin\>\"", ",", "\"\</home/conor/.local/bin\>\"", ",", 
+     "\"\</usr/local/sbin\>\"", ",", "\"\</usr/local/bin\>\"", ",", 
+     "\"\</usr/sbin\>\"", ",", "\"\</usr/bin\>\"", ",", "\"\</sbin\>\"", ",", 
+     "\"\</bin\>\"", ",", "\"\</usr/games\>\"", ",", 
+     "\"\</usr/local/games\>\"", ",", "\"\</snap/bin\>\""}], "}"}]}], ";"}]], \
+"Input",
+ CellChangeTimes->{{3.808705455693418*^9, 
+  3.8087054804550533`*^9}},ExpressionUUID->"292b360d-03fc-47ad-bcb8-\
+709b7b2ba4f4"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"/home/conor/bin\"\>", ",", "\<\"/home/conor/.local/bin\"\>", 
+   ",", "\<\"/home/conor/bin\"\>", ",", "\<\"/home/conor/.local/bin\"\>", 
+   ",", "\<\"/usr/local/sbin\"\>", ",", "\<\"/usr/local/bin\"\>", 
+   ",", "\<\"/usr/sbin\"\>", ",", "\<\"/usr/bin\"\>", ",", "\<\"/sbin\"\>", 
+   ",", "\<\"/bin\"\>", ",", "\<\"/usr/games\"\>", 
+   ",", "\<\"/usr/local/games\"\>", ",", "\<\"/snap/bin\"\>"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.8087054770107393`*^9},
+ CellLabel->"Out[8]=",ExpressionUUID->"95bf7f24-1128-4a75-b5c9-415fd89a34ac"]
+}, Open  ]],
+
+Cell[BoxData[{
+ StyleBox[
+  RowBox[{
+   RowBox[{"data", "=", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\</home/conor/bin\>\"", ",", "\"\</home/conor/.local/bin\>\"", ",", 
+      "\"\</home/conor/bin\>\"", ",", "\"\</home/conor/.local/bin\>\"", ",", 
+      "\"\</usr/local/sbin\>\"", ",", "\"\</usr/local/bin\>\"", ",", 
+      "\"\</usr/sbin\>\"", ",", "\"\</usr/bin\>\"", ",", "\"\</sbin\>\"", 
+      ",", "\"\</bin\>\"", ",", "\"\</usr/games\>\"", ",", 
+      "\"\</usr/local/games\>\"", ",", "\"\</snap/bin\>\""}], "}"}]}], ";"}],
+  FontSize->12], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\"\<export PATH=\>\"", "<>", 
+   RowBox[{"StringRiffle", "[", 
+    RowBox[{"data", ",", "\"\<:\>\""}], "]"}]}], "//", 
+  "CopyToClipboard"}]}], "Input",
+ CellFrame->{{True, True}, {False, True}},
+ CellFrameLabels->{{None, None}, {None, "input (mathematica code)"}},
+ CellChangeTimes->{{3.765690460663842*^9, 3.765690461391439*^9}, {
+  3.7656906024434443`*^9, 3.765690603751608*^9}, {3.808705471714829*^9, 
+  3.8087055288504267`*^9}, {3.808705565212405*^9, 3.808705617139407*^9}},
+ Background->GrayLevel[0.95],
+ CellLabel->"In[19]:=",ExpressionUUID->"14d0bd73-fb75-4139-8af5-770c4c637be9"],
+
+Cell[BoxData[{
+ StyleBox[
+  RowBox[{
+   RowBox[{"data", "=", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\</home/conor/bin\>\"", ",", "\"\</home/conor/.local/bin\>\"", ",", 
+      "\"\</home/conor/bin\>\"", ",", "\"\</home/conor/.local/bin\>\"", ",", 
+      "\"\</usr/local/sbin\>\"", ",", "\"\</usr/sbin\>\"", ",", 
+      "\"\</usr/bin\>\"", ",", "\"\</sbin\>\"", ",", "\"\</bin\>\"", ",", 
+      "\"\</usr/games\>\"", ",", "\"\</usr/local/games\>\"", ",", 
+      "\"\</snap/bin\>\""}], "}"}]}], ";"}],
+  FontSize->12], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\"\<export PATH=\>\"", "<>", 
+   RowBox[{"StringRiffle", "[", 
+    RowBox[{"data", ",", "\"\<:\>\""}], "]"}]}], "//", 
+  "CopyToClipboard"}]}], "Input",
+ CellFrame->{{True, True}, {False, True}},
+ CellFrameLabels->{{None, None}, {None, "input (mathematica code)"}},
+ CellChangeTimes->{{3.765690460663842*^9, 3.765690461391439*^9}, {
+   3.7656906024434443`*^9, 3.765690603751608*^9}, {3.808705471714829*^9, 
+   3.8087055288504267`*^9}, {3.808705565212405*^9, 3.808705617139407*^9}, 
+   3.808705652911749*^9},
+ Background->GrayLevel[
+  0.95],ExpressionUUID->"3f4e1aae-b7a6-4616-ac32-430849c3cfea"]
+},
+WindowSize->{1688, 1388},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->"DefaultModified2.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 743, 14, 265, "Input",ExpressionUUID->"52a735c1-c658-4250-b73a-6e4e2bc398e1"],
+Cell[1326, 38, 1293, 37, 666, "Output",ExpressionUUID->"11635f1e-df1c-431d-b425-79ba0c20af77"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2656, 80, 649, 14, 150, InheritFromParent,ExpressionUUID->"292b360d-03fc-47ad-bcb8-709b7b2ba4f4"],
+Cell[3308, 96, 583, 10, 158, "Output",ExpressionUUID->"95bf7f24-1128-4a75-b5c9-415fd89a34ac"]
+}, Open  ]],
+Cell[3906, 109, 1182, 24, 265, "Input",ExpressionUUID->"14d0bd73-fb75-4139-8af5-770c4c637be9"],
+Cell[5091, 135, 1158, 25, 265, "Input",ExpressionUUID->"3f4e1aae-b7a6-4616-ac32-430849c3cfea"]
+}
+]
+*)
+

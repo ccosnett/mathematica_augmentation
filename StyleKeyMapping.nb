@@ -1,0 +1,112 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3295,        104]
+NotebookOptionsPosition[      2541,         80]
+NotebookOutlinePosition[      2921,         97]
+CellTagsIndexPosition[      2878,         94]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[StyleBox["k k",
+ StripOnInput->False,
+ LineColor->GrayLevel[0],
+ FrontFaceColor->GrayLevel[0],
+ BackFaceColor->GrayLevel[0],
+ GraphicsColor->GrayLevel[0],
+ FontWeight->Normal,
+ FontColor->GrayLevel[0]]], "Text",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellEvaluationFunction->cel`gTalker,
+ CellFrameLabels->{{None, ""}, {None, None}},
+ CellChangeTimes->{
+  3.76759354080647*^9, {3.767593682762628*^9, 3.767593682902117*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"632d1338-488c-43b5-8982-bc068224432d"],
+
+Cell[TextData[StyleBox["",
+ StripOnInput->False,
+ LineColor->GrayLevel[0],
+ FrontFaceColor->GrayLevel[0],
+ BackFaceColor->GrayLevel[0],
+ GraphicsColor->GrayLevel[0],
+ FontWeight->Normal,
+ FontColor->GrayLevel[0]]], "Text",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellEvaluationFunction->cel`gTalker,
+ GeneratedCell->True,
+ CellAutoOverwrite->True,
+ CellFrameLabels->{{None, ""}, {None, None}},
+ CellChangeTimes->{
+  3.767594032393077*^9},ExpressionUUID->"c7ffb3bb-ad11-4ef6-b40e-\
+bd1ca2e3d490"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CurrentValue", "[", 
+  RowBox[{"{", 
+   RowBox[{
+   "StyleDefinitions", ",", "\"\<Subsubsubsection\>\"", ",", 
+    "StyleKeyMapping"}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.767594291575507*^9, 3.767594351378777*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"58221c77-a1ea-4e07-ad31-d4ae1e5e14da"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"\<\"Tab\"\>", "\[Rule]", "\<\"Subsubsubsubsection\"\>"}], ",", 
+   RowBox[{"\<\"Backspace\"\>", "\[Rule]", "\<\"Subsubsection\"\>"}], ",", 
+   RowBox[{
+    RowBox[{"KeyEvent", "[", 
+     RowBox[{"\<\"Tab\"\>", ",", 
+      RowBox[{"Modifiers", "\[Rule]", 
+       RowBox[{"{", "Shift", "}"}]}]}], "]"}], 
+    "\[Rule]", "\<\"Subsubsection\"\>"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.7675943481165047`*^9, 3.7675943755928183`*^9}},
+ CellLabel->"Out[5]=",ExpressionUUID->"1bfc5360-2e9c-4276-88ca-b1a735e3ece9"]
+}, Open  ]]
+},
+WindowSize->{1278, 1395},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+Background->GrayLevel[1],
+FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
+2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 533, 14, 69, "Text",ExpressionUUID->"632d1338-488c-43b5-8982-bc068224432d",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin"],
+Cell[1094, 36, 512, 16, 69, "Text",ExpressionUUID->"c7ffb3bb-ad11-4ef6-b40e-bd1ca2e3d490",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin"],
+Cell[CellGroupData[{
+Cell[1631, 56, 327, 7, 59, "Input",ExpressionUUID->"58221c77-a1ea-4e07-ad31-d4ae1e5e14da"],
+Cell[1961, 65, 564, 12, 109, "Output",ExpressionUUID->"1bfc5360-2e9c-4276-88ca-b1a735e3ece9"]
+}, Open  ]]
+}
+]
+*)
+

@@ -1,0 +1,415 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     15737,        407]
+NotebookOptionsPosition[     11158,        304]
+NotebookOutlinePosition[     13190,        360]
+CellTagsIndexPosition[     13147,        357]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[StyleBox["here is a stylesheet version that mimics Kubas code",
+ StripOnInput->False,
+ LineColor->GrayLevel[0],
+ FrontFaceColor->GrayLevel[0],
+ BackFaceColor->GrayLevel[0],
+ GraphicsColor->GrayLevel[0],
+ FontWeight->Normal,
+ FontColor->GrayLevel[0]]], "Text",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellEvaluationFunction->cel`gTalker,
+ CellFrameLabels->{{None, ""}, {None, None}},
+ CellChangeTimes->{{3.767795653131339*^9, 3.767795668968586*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"eb595e41-14d8-4329-b099-4b83d389ce64"],
+
+Cell[TextData[StyleBox["You can modify the default stylesheet to use for new \
+notebooks, see the answers to How to change the default Notebook stylesheet.",
+ 
+ StripOnInput->False,
+ LineColor->GrayLevel[0],
+ FrontFaceColor->GrayLevel[0],
+ BackFaceColor->GrayLevel[0],
+ GraphicsColor->GrayLevel[0],
+ FontWeight->Normal,
+ FontColor->GrayLevel[0]]], "Text",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellEvaluationFunction->cel`gTalker,
+ CellFrameLabels->{{None, ""}, {None, None}},
+ CellChangeTimes->{{3.767795719548924*^9, 
+  3.767795724523467*^9}},ExpressionUUID->"45ff930c-ad43-4d0b-bd99-\
+f9a49184bc26"],
+
+Cell[TextData[StyleBox["For everyday work I use a custom notebook template. \
+Its name DefaultModified.nb However, in order to open it I need to first open \
+a built-in default notebook, go to the Menu/Format/StyleSheet and define the \
+style that I need.",
+ StripOnInput->False,
+ LineColor->GrayLevel[0],
+ FrontFaceColor->GrayLevel[0],
+ BackFaceColor->GrayLevel[0],
+ GraphicsColor->GrayLevel[0],
+ FontWeight->Normal,
+ FontColor->GrayLevel[0]]], "Text",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellEvaluationFunction->cel`gTalker,
+ CellFrameLabels->{{None, ""}, {None, None}},
+ CellChangeTimes->{{3.767795735839451*^9, 3.767795739146882*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"35a1eb8b-a993-4fed-b5d5-b935ef580232"],
+
+Cell[TextData[StyleBox["My question: Is it possible to fix in Mma a style of \
+the notebook that will open by default? In my case the DefaultModified.nb.",
+ StripOnInput->False,
+ LineColor->GrayLevel[0],
+ FrontFaceColor->GrayLevel[0],
+ BackFaceColor->GrayLevel[0],
+ GraphicsColor->GrayLevel[0],
+ FontWeight->Normal,
+ FontColor->GrayLevel[0]]], "Text",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellEvaluationFunction->cel`gTalker,
+ CellFrameLabels->{{None, ""}, {None, None}},
+ CellChangeTimes->{{3.7677957641408453`*^9, 
+  3.7677957714322453`*^9}},ExpressionUUID->"58bb1fa6-9bb5-4c30-b564-\
+2dbde5525ac1"],
+
+Cell[TextData[StyleBox["Note that I do not want to kill or change the \
+Default.nb style. Let it be in case that something goes wrong. I only want to \
+ask Mma to open another template by default.\n\n",
+ StripOnInput->False,
+ LineColor->GrayLevel[0],
+ FrontFaceColor->GrayLevel[0],
+ BackFaceColor->GrayLevel[0],
+ GraphicsColor->GrayLevel[0],
+ FontWeight->Normal,
+ FontColor->GrayLevel[0]]], "Text",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellEvaluationFunction->cel`gTalker,
+ CellFrameLabels->{{None, ""}, {None, None}},
+ CellChangeTimes->{{3.767795780012487*^9, 3.767795782186328*^9}},
+ CellLabel->"In[10]:=",ExpressionUUID->"2a7ab5f1-d089-47c6-beac-500d3a252149"],
+
+Cell[TextData[StyleBox["you can use Default style definitions but I would \
+rename yours to Default dot nb and put it in Userbasedirectory so that \
+notebooks have a valid style definitions when sent to others",
+ StripOnInput->False,
+ LineColor->GrayLevel[0],
+ FrontFaceColor->GrayLevel[0],
+ BackFaceColor->GrayLevel[0],
+ GraphicsColor->GrayLevel[0],
+ FontWeight->Normal,
+ FontColor->GrayLevel[0]]], "Text",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellEvaluationFunction->cel`gTalker,
+ CellFrameLabels->{{None, ""}, {None, None}},
+ CellChangeTimes->{{3.767795812951461*^9, 3.767795854616589*^9}},
+ CellLabel->"In[12]:=",ExpressionUUID->"32e663ca-01f5-4197-b2a3-8d09b9ffa562"],
+
+Cell[TextData[StyleBox["How to use the DefaultStyleDefinitions? Yes, I \
+understan that I could simply rename DefaultModified.nb into Defalt.nb. My \
+point is, however, that I do not want to destroy the Default.nb",
+ StripOnInput->False,
+ LineColor->GrayLevel[0],
+ FrontFaceColor->GrayLevel[0],
+ BackFaceColor->GrayLevel[0],
+ GraphicsColor->GrayLevel[0],
+ FontWeight->Normal,
+ FontColor->GrayLevel[0]]], "Text",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellEvaluationFunction->cel`gTalker,
+ CellFrameLabels->{{None, ""}, {None, None}},
+ CellChangeTimes->{{3.767795872472137*^9, 3.767795877771834*^9}},
+ CellLabel->"In[14]:=",ExpressionUUID->"a9e25a70-444b-4c11-9c18-4845596f9cf8"],
+
+Cell[TextData[StyleBox["According to the Documentation,",
+ StripOnInput->False,
+ LineColor->GrayLevel[0],
+ FrontFaceColor->GrayLevel[0],
+ BackFaceColor->GrayLevel[0],
+ GraphicsColor->GrayLevel[0],
+ FontWeight->Normal,
+ FontColor->GrayLevel[0]]], "Text",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellEvaluationFunction->cel`gTalker,
+ CellFrameLabels->{{None, ""}, {None, None}},
+ CellChangeTimes->{{3.7677966222284307`*^9, 3.767796635924961*^9}},
+ CellLabel->"In[19]:=",ExpressionUUID->"328355d1-59ac-4afe-96cc-ea515d690e65"],
+
+Cell[TextData[StyleBox["Default Style Definitions is a global option that \
+specifies the default stylesheet for all new notebooks",
+ StripOnInput->False,
+ LineColor->GrayLevel[0],
+ FrontFaceColor->GrayLevel[0],
+ BackFaceColor->GrayLevel[0],
+ GraphicsColor->GrayLevel[0],
+ FontWeight->Normal,
+ FontColor->GrayLevel[0]]], "Text",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellEvaluationFunction->cel`gTalker,
+ CellFrameLabels->{{None, ""}, {None, None}},
+ CellChangeTimes->{{3.767796645277368*^9, 3.767796680138275*^9}},
+ CellLabel->"In[30]:=",ExpressionUUID->"c20c628d-3879-453c-8b4d-c396197b9e9f"],
+
+Cell[TextData[StyleBox["The  stylesheet must be located in a directory that \
+is listed in style sheet path",
+ StripOnInput->False,
+ LineColor->GrayLevel[0],
+ FrontFaceColor->GrayLevel[0],
+ BackFaceColor->GrayLevel[0],
+ GraphicsColor->GrayLevel[0],
+ FontWeight->Normal,
+ FontColor->GrayLevel[0]]], "Text",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellEvaluationFunction->cel`gTalker,
+ CellFrameLabels->{{None, ""}, {None, None}},
+ CellChangeTimes->{{3.7677966817831297`*^9, 3.7677967080998793`*^9}},
+ CellLabel->"In[31]:=",ExpressionUUID->"4f1da94a-9f71-4141-92b6-aed5bbc3f7a7"],
+
+Cell[TextData[StyleBox["Note that this option affects not only on-screen \
+display but also determines the default styles used by Export",
+ StripOnInput->False,
+ LineColor->GrayLevel[0],
+ FrontFaceColor->GrayLevel[0],
+ BackFaceColor->GrayLevel[0],
+ GraphicsColor->GrayLevel[0],
+ FontWeight->Normal,
+ FontColor->GrayLevel[0]]], "Text",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellEvaluationFunction->cel`gTalker,
+ CellFrameLabels->{{None, ""}, {None, None}},
+ CellChangeTimes->{{3.767796749644816*^9, 3.767796778224765*^9}},
+ CellLabel->"In[32]:=",ExpressionUUID->"d9596242-503e-414a-8190-9085cbb840ab"],
+
+Cell[TextData[StyleBox["By convention the custom user stylesheets should be \
+located in the user profile directory",
+ StripOnInput->False,
+ LineColor->GrayLevel[0],
+ FrontFaceColor->GrayLevel[0],
+ BackFaceColor->GrayLevel[0],
+ GraphicsColor->GrayLevel[0],
+ FontWeight->Normal,
+ FontColor->GrayLevel[0]]], "Text",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellEvaluationFunction->cel`gTalker,
+ CellFrameLabels->{{None, ""}, {None, None}},
+ CellChangeTimes->{{3.767796780882491*^9, 3.76779680534269*^9}, {
+  3.767796900302259*^9, 
+  3.767796907394908*^9}},ExpressionUUID->"1cd8091f-a740-417d-bc90-\
+a4561cf913dd"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"dir", "=", 
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{
+     "$UserBaseDirectory", ",", " ", "\"\<SystemFiles\>\"", ",", 
+      "\"\<FrontEnd\>\"", ",", "\"\<StyleSheets\>\""}], "}"}], "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.767796914562738*^9, 3.767796961370393*^9}, {
+  3.767863213122842*^9, 3.767863216467342*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"cdf0588c-2dfb-449d-beb3-c18614a049de"],
+
+Cell[BoxData[
+ RowBox[{"CopyToClipboard", "@", "dir"}]], "Input",
+ CellChangeTimes->{{3.7678634105147257`*^9, 3.7678634135336323`*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"72405d15-4086-4a24-8971-00f9c3aa4d58"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"/", "Users"}], "/", "johncosnett"}], "/", "Library"}], "/", 
+     "Mathematica"}], "/", "SystemFiles"}], "/", "FrontEnd"}], "/", 
+  "StyleSheets"}]], "Input",
+ CellChangeTimes->{{3.76786341602129*^9, 
+  3.76786341602219*^9}},ExpressionUUID->"c02cd406-3865-4de6-8652-\
+e9fc5c7ad497"],
+
+Cell[TextData[StyleBox["If the directory does not exist one should create it",
+ 
+ StripOnInput->False,
+ LineColor->GrayLevel[0],
+ FrontFaceColor->GrayLevel[0],
+ BackFaceColor->GrayLevel[0],
+ GraphicsColor->GrayLevel[0],
+ FontWeight->Normal,
+ FontColor->GrayLevel[0]]], "Text",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellEvaluationFunction->cel`gTalker,
+ CellFrameLabels->{{None, ""}, {None, None}},
+ CellChangeTimes->{{3.767796964547598*^9, 3.767796973825721*^9}},
+ CellLabel->"In[38]:=",ExpressionUUID->"695537e1-256b-4608-94d1-c39fe0cadf5f"],
+
+Cell[TextData[StyleBox["You should put your custom stylesheet DefaultModified \
+in this directory and then set is as the default via",
+ StripOnInput->False,
+ LineColor->GrayLevel[0],
+ FrontFaceColor->GrayLevel[0],
+ BackFaceColor->GrayLevel[0],
+ GraphicsColor->GrayLevel[0],
+ FontWeight->Normal,
+ FontColor->GrayLevel[0]]], "Text",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellEvaluationFunction->cel`gTalker,
+ CellFrameLabels->{{None, ""}, {None, None}},
+ CellChangeTimes->{{3.767797015488577*^9, 
+  3.767797043611149*^9}},ExpressionUUID->"ff34efa3-d490-47e2-8db4-\
+595353a9f00c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"CurrentValue", "[", 
+   RowBox[{"$FrontEnd", ",", " ", "DefaultStyleDefinitions"}], "]"}], "=", 
+  "\"\<DefaultMod.nb\>\""}]], "Input",
+ CellChangeTimes->{{3.767797052691431*^9, 3.767797078852758*^9}, {
+  3.767797158544613*^9, 3.767797159313107*^9}, {3.7678634454698057`*^9, 
+  3.767863448074073*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"94897f8b-3a77-49b7-a9ff-f04659364789"],
+
+Cell[BoxData["\<\"DefaultMod.nb\"\>"], "Output",
+ CellChangeTimes->{3.767797167869321*^9, 3.767863452929717*^9},
+ CellLabel->"Out[7]=",ExpressionUUID->"b9f4c490-d9e8-42de-809d-8f28aa0e4986"]
+}, Open  ]],
+
+Cell[BoxData["n"], "Input",ExpressionUUID->"07896407-b8cd-467c-aced-ec36fd99c4e6"]
+},
+WindowSize->{1278, 1395},
+WindowMargins->{{0, Automatic}, {Automatic, -1}},
+TaggingRules->{"LastCursorPosition" -> False},
+CellEpilog:>If[
+  IntegerQ[
+   CurrentValue[
+    SelectedNotebook[], {"TaggingRules", "LastCursorPosition"}]], 
+  SelectionMove[
+    EvaluationCell[], Before, CellContents]; SelectionMove[
+    SelectedNotebook[], Next, Character, 
+    CurrentValue[
+     SelectedNotebook[], {"TaggingRules", "LastCursorPosition"}]]; 
+  CurrentValue[
+     SelectedNotebook[], {"TaggingRules", "LastCursorPosition"}] = False],
+CellEventActions:>{{"MenuCommand", "HandleShiftReturn"} :> (CurrentValue[
+     SelectedNotebook[], {"TaggingRules", "LastCursorPosition"}] = If[
+     MemberQ[
+      FrontEndExecute[
+       FrontEnd`UndocumentedGetSelectionPacket[
+        SelectedNotebook[]]], "CharacterRange" -> Blank[]], 
+     Last[
+      ReplaceAll["CharacterRange", 
+       FrontEndExecute[
+        FrontEnd`UndocumentedGetSelectionPacket[
+         SelectedNotebook[]]]]], False]), {
+   "MenuCommand", "EvaluateCells"} :> (CurrentValue[
+     SelectedNotebook[], {"TaggingRules", "LastCursorPosition"}] = If[
+     MemberQ[
+      FrontEndExecute[
+       FrontEnd`UndocumentedGetSelectionPacket[
+        SelectedNotebook[]]], "CharacterRange" -> Blank[]], 
+     Last[
+      ReplaceAll["CharacterRange", 
+       FrontEndExecute[
+        FrontEnd`UndocumentedGetSelectionPacket[
+         SelectedNotebook[]]]]], False]), PassEventsDown -> True},
+Background->GrayLevel[1],
+FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
+2018)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[StyleDefinitions -> "Default.nb"]]}, WindowSize -> {808, 911}, 
+  WindowMargins -> {{12, Automatic}, {Automatic, 24}}, FrontEndVersion -> 
+  "11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, 2018)", 
+  StyleDefinitions -> "PrivateStylesheetFormatting.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 557, 13, 69, "Text",ExpressionUUID->"eb595e41-14d8-4329-b099-4b83d389ce64",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin"],
+Cell[1118, 35, 621, 16, 114, "Text",ExpressionUUID->"45ff930c-ad43-4d0b-bd99-f9a49184bc26",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin"],
+Cell[1742, 53, 737, 16, 159, "Text",ExpressionUUID->"35a1eb8b-a993-4fed-b5d5-b935ef580232",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin"],
+Cell[2482, 71, 621, 15, 114, "Text",ExpressionUUID->"58bb1fa6-9bb5-4c30-b564-2dbde5525ac1",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin"],
+Cell[3106, 88, 683, 15, 204, "Text",ExpressionUUID->"2a7ab5f1-d089-47c6-beac-500d3a252149",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin"],
+Cell[3792, 105, 692, 15, 159, "Text",ExpressionUUID->"32e663ca-01f5-4197-b2a3-8d09b9ffa562",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin"],
+Cell[4487, 122, 696, 15, 159, "Text",ExpressionUUID->"a9e25a70-444b-4c11-9c18-4845596f9cf8",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin"],
+Cell[5186, 139, 540, 13, 69, "Text",ExpressionUUID->"328355d1-59ac-4afe-96cc-ea515d690e65",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin"],
+Cell[5729, 154, 613, 14, 114, "Text",ExpressionUUID->"c20c628d-3879-453c-8b4d-c396197b9e9f",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin"],
+Cell[6345, 170, 594, 14, 69, "Text",ExpressionUUID->"4f1da94a-9f71-4141-92b6-aed5bbc3f7a7",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin"],
+Cell[6942, 186, 619, 14, 114, "Text",ExpressionUUID->"d9596242-503e-414a-8190-9085cbb840ab",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin"],
+Cell[7564, 202, 627, 16, 114, "Text",ExpressionUUID->"1cd8091f-a740-417d-bc90-a4561cf913dd",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin"],
+Cell[8194, 220, 462, 11, 101, "Input",ExpressionUUID->"cdf0588c-2dfb-449d-beb3-c18614a049de"],
+Cell[8659, 233, 213, 3, 59, "Input",ExpressionUUID->"72405d15-4086-4a24-8971-00f9c3aa4d58"],
+Cell[8875, 238, 387, 12, 101, "Input",ExpressionUUID->"c02cd406-3865-4de6-8652-e9fc5c7ad497"],
+Cell[9265, 252, 561, 14, 69, "Text",ExpressionUUID->"695537e1-256b-4608-94d1-c39fe0cadf5f",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin"],
+Cell[9829, 268, 596, 15, 114, "Text",ExpressionUUID->"ff34efa3-d490-47e2-8db4-595353a9f00c",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin"],
+Cell[CellGroupData[{
+Cell[10450, 287, 414, 8, 59, "Input",ExpressionUUID->"94897f8b-3a77-49b7-a9ff-f04659364789"],
+Cell[10867, 297, 190, 2, 67, "Output",ExpressionUUID->"b9f4c490-d9e8-42de-809d-8f28aa0e4986"]
+}, Open  ]],
+Cell[11072, 302, 82, 0, 59, "Input",ExpressionUUID->"07896407-b8cd-467c-aced-ec36fd99c4e6"]
+}
+]
+*)
+
