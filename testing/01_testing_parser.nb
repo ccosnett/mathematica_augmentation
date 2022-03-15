@@ -1,0 +1,370 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     13678,        362]
+NotebookOptionsPosition[     10978,        299]
+NotebookOutlinePosition[     11411,        316]
+CellTagsIndexPosition[     11368,        313]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["testing deep mind wavenet text to speech", "Section",
+ CellChangeTimes->{{3.856101022396055*^9, 
+  3.856101037636044*^9}},ExpressionUUID->"a6770bf7-d219-456c-b701-\
+f8f291cd189f"],
+
+Cell[TextData[StyleBox["the rain in spain",
+ StripOnInput->False,
+ LineColor->GrayLevel[0],
+ FrontFaceColor->GrayLevel[0],
+ BackFaceColor->GrayLevel[0],
+ GraphicsColor->GrayLevel[0],
+ FontWeight->Normal,
+ FontColor->GrayLevel[0]]], "Text",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellEvaluationFunction->cel`gTalker,
+ ShowCellLabel->"False",
+ CellFrameLabels->{{None, ""}, {None, None}},
+ CellChangeTimes->{{3.8561009979050093`*^9, 3.856101000420164*^9}},
+ CellLabel->"In[12]:=",ExpressionUUID->"a38680fe-6dcf-45d0-84bf-4d63fe0c1966"],
+
+Cell[TextData[StyleBox["the rain in spain",
+ StripOnInput->False,
+ LineColor->RGBColor[1, 0, 0],
+ FrontFaceColor->RGBColor[1, 0, 0],
+ BackFaceColor->RGBColor[1, 0, 0],
+ GraphicsColor->RGBColor[1, 0, 0],
+ FontWeight->Normal,
+ FontColor->RGBColor[1, 0, 0]]], "Text",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellEvaluationFunction->cel`gTalker,
+ ShowCellLabel->"False",
+ CellFrameLabels->{{None, ""}, {None, None}},
+ CellChangeTimes->{{3.856101040167248*^9, 
+  3.856101042556041*^9}},ExpressionUUID->"f34a0c09-2686-4522-b330-\
+f0b5f18e9a0f"],
+
+Cell[TextData[StyleBox["the rain in spain",
+ StripOnInput->False,
+ LineColor->RGBColor[
+  0.6657108684256456, 0.23898877484862702`, 0.8113683217589225],
+ FrontFaceColor->RGBColor[
+  0.6657108684256456, 0.23898877484862702`, 0.8113683217589225],
+ BackFaceColor->RGBColor[
+  0.6657108684256456, 0.23898877484862702`, 0.8113683217589225],
+ GraphicsColor->RGBColor[
+  0.6657108684256456, 0.23898877484862702`, 0.8113683217589225],
+ FontWeight->Normal,
+ FontColor->RGBColor[
+  0.6657108684256456, 0.23898877484862702`, 0.8113683217589225]]], "Text",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellEvaluationFunction->cel`gTalker,
+ ShowCellLabel->False,
+ CellFrameLabels->{{None, ""}, {None, None}},
+ CellChangeTimes->{{3.856101043825674*^9, 
+  3.8561010464357*^9}},ExpressionUUID->"591a68b6-718f-4b34-8a3e-090e0c56bf66"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Deep Mind wavenet text to speech executable cells", "Section",
+ CellChangeTimes->{{3.856103718187015*^9, 3.856103722019898*^9}, {
+  3.856103758843649*^9, 
+  3.856103775154861*^9}},ExpressionUUID->"08e02653-ad68-4baa-85f9-\
+bb9268c10713"],
+
+Cell[TextData[StyleBox["the rain in spain",
+ StripOnInput->False,
+ LineColor->RGBColor[
+  0.6657108684256456, 0.23898877484862702`, 0.8113683217589225],
+ FrontFaceColor->RGBColor[
+  0.6657108684256456, 0.23898877484862702`, 0.8113683217589225],
+ BackFaceColor->RGBColor[
+  0.6657108684256456, 0.23898877484862702`, 0.8113683217589225],
+ GraphicsColor->RGBColor[
+  0.6657108684256456, 0.23898877484862702`, 0.8113683217589225],
+ FontWeight->Normal,
+ FontColor->RGBColor[
+  0.6657108684256456, 0.23898877484862702`, 0.8113683217589225]]], "Text",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellEvaluationFunction->cel`gTalker,
+ ShowCellLabel->False,
+ CellFrameLabels->{{None, ""}, {None, None}},
+ CellChangeTimes->{{3.856103780831275*^9, 3.8561037843630943`*^9}},
+ CellLabel->"In[17]:=",ExpressionUUID->"6169a4e2-9481-4f47-90e6-4a274319b565"],
+
+Cell[TextData[StyleBox["the rain in spain",
+ StripOnInput->False,
+ LineColor->RGBColor[
+  0.22899251821568467`, 0.7568250097244553, 0.18772375680879838`],
+ FrontFaceColor->RGBColor[
+  0.22899251821568467`, 0.7568250097244553, 0.18772375680879838`],
+ BackFaceColor->RGBColor[
+  0.22899251821568467`, 0.7568250097244553, 0.18772375680879838`],
+ GraphicsColor->RGBColor[
+  0.22899251821568467`, 0.7568250097244553, 0.18772375680879838`],
+ FontWeight->Normal,
+ FontColor->RGBColor[
+  0.22899251821568467`, 0.7568250097244553, 0.18772375680879838`]]], "Text",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellEvaluationFunction->cel`gTalker,
+ ShowCellLabel->"False",
+ CellFrameLabels->{{None, ""}, {None, None}},
+ CellChangeTimes->{{3.856103799684247*^9, 3.856103802346816*^9}},
+ CellLabel->"In[19]:=",ExpressionUUID->"ce3599b3-93e5-453b-b01b-9e80f7bbb250"],
+
+Cell[TextData[StyleBox["the rain in spain",
+ StripOnInput->False,
+ LineColor->RGBColor[1, 0, 0],
+ FrontFaceColor->RGBColor[1, 0, 0],
+ BackFaceColor->RGBColor[1, 0, 0],
+ GraphicsColor->RGBColor[1, 0, 0],
+ FontWeight->Normal,
+ FontColor->RGBColor[1, 0, 0]]], "Text",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellEvaluationFunction->cel`gTalker,
+ ShowCellLabel->"False",
+ CellFrameLabels->{{None, ""}, {None, None}},
+ CellChangeTimes->{{3.8561038047460537`*^9, 3.856103807874859*^9}},
+ CellLabel->"In[21]:=",ExpressionUUID->"d3fa9d30-7690-4853-995c-530086675b4d"],
+
+Cell[TextData[StyleBox["the rain in spain",
+ StripOnInput->False,
+ LineColor->GrayLevel[0],
+ FrontFaceColor->GrayLevel[0],
+ BackFaceColor->GrayLevel[0],
+ GraphicsColor->GrayLevel[0],
+ FontWeight->Normal,
+ FontColor->GrayLevel[0]]], "Text",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellEvaluationFunction->cel`gTalker,
+ ShowCellLabel->"False",
+ CellFrameLabels->{{None, ""}, {None, None}},
+ CellChangeTimes->{{3.856103809972069*^9, 3.856103812595242*^9}},
+ CellLabel->"In[23]:=",ExpressionUUID->"0ed93bf2-d574-40ed-a1eb-e92478c6edbd"],
+
+Cell[TextData[StyleBox["the rain in spain",
+ StripOnInput->False,
+ LineColor->RGBColor[
+  0.06330778942177573, 0.24852847516497567`, 0.8048823521265225],
+ FrontFaceColor->RGBColor[
+  0.06330778942177573, 0.24852847516497567`, 0.8048823521265225],
+ BackFaceColor->RGBColor[
+  0.06330778942177573, 0.24852847516497567`, 0.8048823521265225],
+ GraphicsColor->RGBColor[
+  0.06330778942177573, 0.24852847516497567`, 0.8048823521265225],
+ FontWeight->Normal,
+ FontColor->RGBColor[
+  0.06330778942177573, 0.24852847516497567`, 0.8048823521265225]]], "Text",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellEvaluationFunction->cel`gTalker,
+ ShowCellLabel->False,
+ CellFrameLabels->{{None, ""}, {None, None}},
+ CellChangeTimes->{{3.856103814575734*^9, 3.856103817138735*^9}},
+ CellLabel->"In[25]:=",ExpressionUUID->"d7b0a6a1-aad4-4dfd-8b2f-23cad937192e"],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{
+  3.767869704382765*^9, {3.8561038666787653`*^9, 
+   3.856103867218197*^9}},ExpressionUUID->"80c97982-da28-467e-903d-\
+b92e9657b6f9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+deep mind wavenet text to speech engine running in google cloud\
+\>", "Section",
+ CellChangeTimes->{{3.8561038862425137`*^9, 
+  3.856103902098175*^9}},ExpressionUUID->"620422c3-81ce-440a-b19a-\
+2d10294e5c57"],
+
+Cell[TextData[StyleBox["the rain in spain",
+ StripOnInput->False,
+ LineColor->RGBColor[1, 0, 0],
+ FrontFaceColor->RGBColor[1, 0, 0],
+ BackFaceColor->RGBColor[1, 0, 0],
+ GraphicsColor->RGBColor[1, 0, 0],
+ FontWeight->Normal,
+ FontColor->RGBColor[1, 0, 0]]], "Text",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellEvaluationFunction->cel`gTalker,
+ ShowCellLabel->"False",
+ CellFrameLabels->{{None, ""}, {None, None}},
+ CellChangeTimes->{{3.8561039224902277`*^9, 3.856103925177601*^9}},
+ CellLabel->"In[33]:=",ExpressionUUID->"f51fd18f-570b-4460-9ec0-179ba8f07989"],
+
+Cell[TextData[StyleBox["the rain in spain",
+ StripOnInput->False,
+ LineColor->RGBColor[
+  0.6657108684256456, 0.23898877484862702`, 0.8113683217589225],
+ FrontFaceColor->RGBColor[
+  0.6657108684256456, 0.23898877484862702`, 0.8113683217589225],
+ BackFaceColor->RGBColor[
+  0.6657108684256456, 0.23898877484862702`, 0.8113683217589225],
+ GraphicsColor->RGBColor[
+  0.6657108684256456, 0.23898877484862702`, 0.8113683217589225],
+ FontWeight->Normal,
+ FontColor->RGBColor[
+  0.6657108684256456, 0.23898877484862702`, 0.8113683217589225]]], "Text",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellEvaluationFunction->cel`gTalker,
+ ShowCellLabel->False,
+ CellFrameLabels->{{None, ""}, {None, None}},
+ CellChangeTimes->{{3.856103952283437*^9, 3.8561039547772007`*^9}},
+ CellLabel->"In[36]:=",ExpressionUUID->"d7a685a3-b752-444c-b4aa-2314846dd81f"],
+
+Cell[TextData[StyleBox["the rain in spain",
+ StripOnInput->False,
+ LineColor->RGBColor[
+  0.22899251821568467`, 0.7568250097244553, 0.18772375680879838`],
+ FrontFaceColor->RGBColor[
+  0.22899251821568467`, 0.7568250097244553, 0.18772375680879838`],
+ BackFaceColor->RGBColor[
+  0.22899251821568467`, 0.7568250097244553, 0.18772375680879838`],
+ GraphicsColor->RGBColor[
+  0.22899251821568467`, 0.7568250097244553, 0.18772375680879838`],
+ FontWeight->Normal,
+ FontColor->RGBColor[
+  0.22899251821568467`, 0.7568250097244553, 0.18772375680879838`]]], "Text",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellEvaluationFunction->cel`gTalker,
+ ShowCellLabel->"False",
+ CellFrameLabels->{{None, ""}, {None, None}},
+ CellChangeTimes->{{3.856103958084688*^9, 3.856103961945279*^9}},
+ CellLabel->"In[40]:=",ExpressionUUID->"e9afe702-2a91-4fb2-a95b-aa72cb71df80"],
+
+Cell[TextData[StyleBox["the rain in spain",
+ StripOnInput->False,
+ LineColor->RGBColor[
+  0.06330778942177573, 0.24852847516497567`, 0.8048823521265225],
+ FrontFaceColor->RGBColor[
+  0.06330778942177573, 0.24852847516497567`, 0.8048823521265225],
+ BackFaceColor->RGBColor[
+  0.06330778942177573, 0.24852847516497567`, 0.8048823521265225],
+ GraphicsColor->RGBColor[
+  0.06330778942177573, 0.24852847516497567`, 0.8048823521265225],
+ FontWeight->Normal,
+ FontColor->RGBColor[
+  0.06330778942177573, 0.24852847516497567`, 0.8048823521265225]]], "Text",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellEvaluationFunction->cel`gTalker,
+ ShowCellLabel->False,
+ CellFrameLabels->{{None, ""}, {None, None}},
+ CellChangeTimes->{{3.8561039666137877`*^9, 3.856103969513198*^9}},
+ CellLabel->"In[43]:=",ExpressionUUID->"c0c2e9df-dc9a-44ed-b86f-ab5a5bbffabe"],
+
+Cell[TextData[StyleBox["the rain in spain",
+ StripOnInput->False,
+ LineColor->GrayLevel[0],
+ FrontFaceColor->GrayLevel[0],
+ BackFaceColor->GrayLevel[0],
+ GraphicsColor->GrayLevel[0],
+ FontWeight->Normal,
+ FontColor->GrayLevel[0]]], "Text",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellEvaluationFunction->cel`gTalker,
+ ShowCellLabel->"False",
+ CellFrameLabels->{{None, ""}, {None, None}},
+ CellChangeTimes->{{3.856103972867784*^9, 3.856103974921151*^9}},
+ CellLabel->"In[45]:=",ExpressionUUID->"639581b6-0277-4a60-be94-28f7724de515"]
+}, Open  ]]
+},
+WindowSize->{1266, 1041},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
+Magnification:>1.3 Inherited,
+FrontEndVersion->"12.2 for Linux x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"DefaultModified2.nb",
+ExpressionUUID->"e73b8549-4511-4d58-9961-791bfc7dcb5e"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 185, 3, 64, "Section",ExpressionUUID->"a6770bf7-d219-456c-b701-f8f291cd189f"],
+Cell[768, 27, 551, 14, 45, "Text",ExpressionUUID->"a38680fe-6dcf-45d0-84bf-4d63fe0c1966",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin"],
+Cell[1322, 43, 555, 15, 45, "Text",ExpressionUUID->"f34a0c09-2686-4522-b330-f0b5f18e9a0f",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin"],
+Cell[1880, 60, 829, 19, 45, "Text",ExpressionUUID->"591a68b6-718f-4b34-8a3e-090e0c56bf66",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2746, 84, 243, 4, 64, "Section",ExpressionUUID->"08e02653-ad68-4baa-85f9-bb9268c10713"],
+Cell[2992, 90, 854, 19, 45, "Text",ExpressionUUID->"6169a4e2-9481-4f47-90e6-4a274319b565",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin"],
+Cell[3849, 111, 864, 19, 45, "Text",ExpressionUUID->"ce3599b3-93e5-453b-b01b-9e80f7bbb250",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin"],
+Cell[4716, 132, 576, 14, 45, "Text",ExpressionUUID->"d3fa9d30-7690-4853-995c-530086675b4d",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin"],
+Cell[5295, 148, 549, 14, 45, "Text",ExpressionUUID->"0ed93bf2-d574-40ed-a1eb-e92478c6edbd",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin"],
+Cell[5847, 164, 857, 19, 45, "Text",ExpressionUUID->"d7b0a6a1-aad4-4dfd-8b2f-23cad937192e",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin"],
+Cell[6707, 185, 283, 6, 143, "Input",ExpressionUUID->"80c97982-da28-467e-903d-b92e9657b6f9"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7027, 196, 218, 5, 64, "Section",ExpressionUUID->"620422c3-81ce-440a-b19a-2d10294e5c57"],
+Cell[7248, 203, 576, 14, 45, "Text",ExpressionUUID->"f51fd18f-570b-4460-9ec0-179ba8f07989",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin"],
+Cell[7827, 219, 854, 19, 45, "Text",ExpressionUUID->"d7a685a3-b752-444c-b4aa-2314846dd81f",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin"],
+Cell[8684, 240, 864, 19, 45, "Text",ExpressionUUID->"e9afe702-2a91-4fb2-a95b-aa72cb71df80",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin"],
+Cell[9551, 261, 859, 19, 45, "Text",ExpressionUUID->"c0c2e9df-dc9a-44ed-b86f-ab5a5bbffabe",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin"],
+Cell[10413, 282, 549, 14, 45, "Text",ExpressionUUID->"639581b6-0277-4a60-be94-28f7724de515",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin"]
+}, Open  ]]
+}
+]
+*)
+
