@@ -1,4 +1,4 @@
-progs=progs<>"";
+progs="~/Dropbox/05_PROGRAMS";
 AppendTo[$Path, progs<>"/03_PARSER/"];
 AppendTo[$Path, progs<>"/19_brain_computer_interface/01_MIND_EXTENSION/mindExtension/"];
 AppendTo[$Path, progs<>"/19_brain_computer_interface/02_SHORTCUT_LIST/shortcutList/"];
