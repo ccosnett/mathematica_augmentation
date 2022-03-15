@@ -1,0 +1,1 @@
+cp ./init.m ~/.Mathematica/Kernel/

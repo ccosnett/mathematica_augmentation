@@ -1,26 +1,28 @@
 progs="~/Dropbox/05_PROGRAMS";
-AppendTo[$Path, progs<>"/03_PARSER/"];
-AppendTo[$Path, progs<>"/19_brain_computer_interface/01_MIND_EXTENSION/mindExtension/"];
-AppendTo[$Path, progs<>"/19_brain_computer_interface/02_SHORTCUT_LIST/shortcutList/"];
-AppendTo[$Path, progs<>"/000_hyper_graph/"];
-AppendTo[$Path, progs<>"/14_vector_calculus_functions/"];
 
-AppendTo[$Path, progs<>"/12_statistical_functions/"];
-AppendTo[$Path, progs<>"/06_Linear_Algebra_Functions/"];
-AppendTo[$Path, progs<>"/17_steno/steno/"];
-(*Get[progs<>"/17_steno/steno/stenoLinux.m"];*)
-(*Get[progs<>"/12_statistical_functions/statistical.m"];*)
-(*Get[progs<>"/07_Logic_Functions/truthtabler.m"];*)
-AppendTo[$Path, progs<>"/07_Logic_Functions/"];
-AppendTo[$Path, progs<>"/27_Russian/"];
-(*folders = {"/03_PARSER/"};*)
-
+dirs = {
+      "/000_hyper_graph/"
+    , "/03_PARSER/"
+    , "/06_Linear_Algebra_Functions/"
+    , "/07_Logic_Functions/"
+    , "/12_statistical_functions/"
+    , "/14_vector_calculus_functions/"
+    , "/17_steno/steno/"
+    , "/19_brain_computer_interface/"
+    , "/19_brain_computer_interface/01_MIND_EXTENSION/mindExtension/"
+    , "/19_brain_computer_interface/02_SHORTCUT_LIST/shortcutList/"
+    , "/19_brain_computer_interface/03_DECK_OF_JOKERS/"
+    , "/27_Russian/"
+};
+append = AppendTo[$Path, progs<>#]&;
+append /@ dirs;
 
 
 $do=FrontEndTokenExecute;
 do=FrontEndTokenExecute;
+(*$Messages = {};*)
 
-(*Get["liq`"];*)
+
 Get["mindExtension`"];
 Get["abilities`"];
 Get["hyperGraph`"];
@@ -53,14 +55,7 @@ Get["RussianTools`"];
 
 (****************************************************************)
 (****************************************************************)
-(*AppendTo[$Path, progs<>"/000_hyper_graph/"];*)
-(*AppendTo[$Path, progs<>"/000_hyper_graph/mmaEdinburgh/"];*)
 
-
-AppendTo[$Path, progs<>"/19_brain_computer_interface/02_SHORTCUT_LIST/shortcutList/"];
-AppendTo[$Path, progs<>"/19_brain_computer_interface/"];
-AppendTo[$Path, progs<>"/19_brain_computer_interface/01_MIND_EXTENSION/mindExtension/"];
-AppendTo[$Path, progs<>"/19_brain_computer_interface/03_DECK_OF_JOKERS/"];
 (****************************************************************)
 (****************************************************************)
 (*$Messages = {};*)
